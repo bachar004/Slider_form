@@ -1,0 +1,180 @@
+body{
+    margin: 0%;
+    min-width: 450px;
+}
+.fas-container{
+    position: relative;
+}
+.fas-container i {
+    position: absolute;
+    top: 39%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+input{
+    border:solid 1px rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 18px  45px;
+    background-color: rgb(237, 237, 237);
+    margin-bottom: 15px;
+}
+i{
+    color: rgb(162, 161, 161);
+    padding-left: 10px;
+}
+.buttono-2{
+    border:solid 1px rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: rgb(171, 171, 246);
+    color: white;
+    padding: 12px 35px ;
+    margin-top: 5px 0px;
+    cursor: pointer;
+}
+.buttona{
+    border:solid 1px rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color:white;
+    color: rgb(171, 171, 246);
+    padding: 12px 10%;
+    transform: translateX(50%);
+    cursor: pointer;
+    position: absolute;
+    right: 50%;
+    margin-top: 10px;
+}
+.buttono , .buttono-2:hover{
+    font-weight: bold;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.buttona:hover{
+    color: white;
+    background-color: rgb(171, 171, 246);
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.glissant-d{
+    width: 50%;
+    flex:1;
+    margin-left: 10%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.glissant-g{
+    width: 50%;
+    flex:1;
+    margin-left: 4%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cont{
+    width: 100%;
+    overflow: hidden;
+}
+.g{
+ flex: 2;
+ height: 100vh;
+ width:30%;
+ background-color:rgb(171, 171, 246);
+ border-bottom-left-radius: 90%;
+ background-image: url(undraw_sign-up_qamz.svg);
+ background-repeat: no-repeat;
+ background-position: bottom right;
+ background-size: 70% 60%;
+ position: relative;
+ color: white;
+ text-align: center;
+}
+.d{
+ flex: 2;
+ height: 100vh;
+ width:30%;
+ background-color:rgb(171, 171, 246);
+ border-bottom-right-radius: 90%;
+ background-image: url(undraw_login_weas.svg);
+ background-repeat: no-repeat;
+ background-position: bottom left;
+ background-size: 70% 60%;
+ position: relative;
+ color: white;
+ text-align: center;
+}
+.fab {
+    display: flex;
+    margin-top: 5px;
+    cursor: pointer;
+    gap: 12px;
+}
+.fab i{
+    width:15%;
+    padding: 5% 0%;
+    color: black;
+}
+.fab i:hover{
+    color: rgb(138, 138, 237);
+    transform: scale(1.4);
+    transition: 0.3s;
+}
+.slider{
+    display: flex;
+    width:200%;
+    transition: transform 0.7s;
+}
+.move-left{
+    transform: translateX(-50%);
+}
+.move-right{
+    transform: translateX(0%);
+}
+.page{
+    display: flex;
+    width:100%;
+    height: 100vh;
+}
+.alert{
+    animation:al 1s ease-in-out;
+    outline: solid 2px red;
+}
+@keyframes al{
+0% { transform: rotate(0deg); }
+20% { transform: rotate(-5deg); }
+40% { transform: rotate(5deg); }
+60% { transform: rotate(-5deg); }
+80% { transform: rotate(5deg); }
+100% { transform: rotate(0deg); }
+}
+.alert_msg{
+    background-color: rgb(243, 44, 44);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 10px;
+    margin-top: 10px;
+    animation:fade 0.5s ease-in-out;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
